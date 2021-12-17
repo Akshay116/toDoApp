@@ -17,7 +17,15 @@ filterOption.addEventListener('click',filterTodo);
 function addTodo(event){
     event.preventDefault();//prevent form submit 
    // console.log("hello");working chek
-   //toDo div struc
+       
+    console.log(todoInput.value);
+   if(todoInput.value.length ==0 )//so that empty task dont append 
+   {
+     alert("empty task");
+       return;
+   }  
+    
+     //toDo div struc
    const todoDiv = document.createElement('div');
    todoDiv.classList.add("todo");//adding class to div
    const newTOdo = document.createElement('li');
