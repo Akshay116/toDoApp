@@ -8,14 +8,14 @@ const tasksCounter = document.getElementById('tasks-counter');
 const dateAdd = document.getElementsByClassName('date-c');
 
 
-//event lsitiner here 
+//event listeners here 
 todoButton.addEventListener('click',addTodo);//add to do function below
 todoList.addEventListener('click',deleteCheck);//t odlete and cheked button 
 filterOption.addEventListener('click',filterTodo);
 
 // functins here
 function addTodo(event){
-    event.preventDefault();//prevent form submit 
+    event.preventDefault();//prevent form submit behaviour (which is either request to link redirect to reload)
    // console.log("hello");working chek
        
     console.log(todoInput.value);
